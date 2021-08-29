@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="pokemon">
+      <div class="container">
+        <header class="pokemon__header">
+          <img
+            src="./images/pokemon_logo.png"
+            width="610"
+            height="225"
+            alt=""
+          />
+          <button class="like-bnt">
+            <img
+              class="pokemon__header-like"
+              src="./images/Mask.png"
+              width="42"
+              height="36"
+              alt=""
+            />
+          </button>
+        </header>
+
+        <form class="pokemon__form">
+          <select class="pokemon__form-genre input">
+            <option>All</option>
+          </select>
+          <span>
+            <input
+              class="pokemon__form-input input"
+              type="text"
+              placeholder="Search"
+            />
+            <img
+              class="lupa"
+              src="./images/lupa.png"
+              width="18"
+              height="18"
+              alt=""
+            />
+          </span>
+          <select class="pokemon__form-sort input">
+            <option value="0">Aa-Zz</option>
+            <option value="1">Zz-Aa</option>
+            <option value="2">New-Old</option>
+            <option value="3">Old-New</option>
+          </select>
+          <button class="form-submit input" type="submit">Button</button>
+        </form>
+
+        <ul class="pokemon__list"></ul>
+      </div>
+    </section>
+
+    <template id="pokemon-template">
+      <li class="pokemon__list-item">
+        <img
+          class="pokemon__list-item-img pokemon-img"
+          src="./images/pokemon.png"
+          width="157"
+          height="157"
+          alt=""
+        />
+        <hr class="pokemon__list-item-line" />
+        <div class="pokemon__list-item-heading">
+          <h3 class="pokemon__list-item-title pokemon-title">Pokemons</h3>
+          <svg class="icon" width="24" height="24">
+            <use xlink:href="./images/sprites.svg#like"></use>
+          </svg>
+        </div>
+
+        <span class="pokemon__list-item-genre pokemon-type"></span>
+        <div class="pokemon__list-item-detailes">
+          <p class="pokemon__list-item-weight pokemon-weight">6.9 kg</p>
+          <p class="pokemon__list-item-age pokemon-age">99 age</p>
+        </div>
+      </li>
+    </template>
+
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

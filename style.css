@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffd845;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.pokemon__header {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.like-bnt {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.icon {
+  margin-left: 100px;
+}
+
+/* .icon:hover,
+.icon:active {
+  background-color: black;
+} */
+
+.pokemon__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background: #ffffff;
+  border: 2px solid #302f2f;
+  border-radius: 15px;
+  margin-right: 35px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.pokemon__form-genre {
+  width: 260px;
+  padding: 16px 81px 16px 82px;
+}
+
+.pokemon__form-input {
+  padding: 16px 0 16px 29px;
+  position: relative;
+}
+
+.lupa {
+  position: absolute;
+  margin-left: -90px;
+  margin-top: 24px;
+}
+
+.pokemon__form-sort {
+  padding: 16px 80px;
+}
+
+.form-submit {
+  padding: 16px 64px;
+}
+
+.pokemon__list {
+  list-style: none;
+  margin-top: 116px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pokemon__list-item {
+  width: 307px;
+  background-color: #fff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 37px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.pokemon__list-item-line {
+  width: 307px;
+  height: 2px;
+  margin-top: 68px;
+  margin-bottom: 20px;
+  background-color: #000000;
+}
+
+.pokemon__list-item-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon__list-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: auto;
+}
+
+.like-icon {
+  margin-left: 100px;
+}
+
+.pokemon__list-item-genre {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  margin-right: auto;
+}
+
+.pokemon__list-item-detailes {
+  display: flex;
+  margin-right: auto;
+}
+
+.pokemon__list-item-weight {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.pokemon__list-item-age {
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 30px;
+}
